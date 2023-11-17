@@ -51,12 +51,14 @@ while menu:
         else:
             bt.ImprimeMaior(reg, ApAlfa)
     elif cmd == 6:
-        x = input("\nDigite a chave inicial: ")
-        y = input("\nDigite a chave final: ")
-        if x.isnumeric() and y.isnumeric():
-            x, y = int(x), int(y)
-            bt.BuscaPorIntervaloNumerico(Ap, x, y)
+        regX = bt.Registro()
+        regY = bt.Registro()
+        regX.Chave = input("\nDigite a chave inicial: ")
+        regY.Chave = input("\nDigite a chave final: ")
+        if regX.Chave.isnumeric() and regY.Chave.isnumeric():
+            regX.Chave, regY.Chave = int(regX.Chave), int(regY.Chave)
+            bt.ImprimeIntervalo(regX, regY, Ap)
         else:
-            bt.BuscaPorIntervaloAlfa(ApAlfa, x, y)
+            bt.ImprimeIntervalo(regX, regY, ApAlfa)
     else:
         print("Comando inexistente.")
