@@ -1,3 +1,5 @@
+# Alunos: Carol e Yan
+
 import csv
 
 # Declaração das classes e definição do grau da árvore
