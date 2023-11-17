@@ -15,7 +15,7 @@ while menu:
         print("Programa finalizado. ")
         menu = False
     elif cmd == 1:
-        Ap, ApAlfa, chave = bt.Inserir(Ap, ApAlfa, chave)
+        Ap, ApAlfa, chave, ordem = bt.Inserir(Ap, ApAlfa, chave)
     elif cmd == 2:
         reg = bt.Registro()
         reg.Chave = input("\nDigite uma chave maior que zero: ")
