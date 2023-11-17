@@ -24,17 +24,17 @@ Vão ser criadas duas arvores, uma com os indices por numeros e outra com o indi
 
 ## Variaveis
 
-Pagina
+- Pagina
 │ n - numero de elementos na pagina
 │ r - registro
 │ p - ponteiro
 
-Registro
+- Registro
 │ chave - chave do registro
 │ elemento - conteudo do registro
 
-Ap - Arvore
-ApAlfa - Arvore com indices pelas primeiras letras do nome
+- Ap - Arvore
+- ApAlfa - Arvore com indices pelas primeiras letras do nome
 
 ## Autores
 
