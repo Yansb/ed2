@@ -219,3 +219,14 @@ def ImprimeMaior(x, Ap):
                 print(Ap.r[i].Chave, "-", Ap.r[i].Elemento)
             i += 1
         ImprimeMaior(x, Ap.p[i])
+
+
+def ImprimeIntervalo(x, y, Ap):
+    if (Ap != None):
+        i = 0
+        while i < Ap.n:
+            ImprimeIntervalo(x, y, Ap.p[i])
+            if (Ap.r[i].Chave >= x.Chave and Ap.r[i].Chave <= y.Chave):
+                print(Ap.r[i].Chave, "-", Ap.r[i].Elemento)
+            i += 1
+        ImprimeIntervalo(x, y, Ap.p[i])
