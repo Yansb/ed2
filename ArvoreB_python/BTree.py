@@ -39,22 +39,6 @@ def Pesquisa(x, Ap):
 
     return x
 
-
-def PesquisaAlfa(chave, Ap):
-    i = 0
-    if Ap is None:
-        print("Registro não está presente na árvore\n")
-        return
-
-    while i < Ap.n:
-        if Ap.r[i].Chave.startswith(chave):
-            print(Ap.r[i].Chave, "-", Ap.r[i].Elemento)
-        elif chave < Ap.r[i].Chave:
-            PesquisaAlfa(chave, Ap.p[i])
-        i += 1
-
-    PesquisaAlfa(chave, Ap.p[i])
-
 # Funções de inserção
 
 # Insere o registro na página escolhida
@@ -200,7 +184,7 @@ def Inserir(Ap, ApAlfa, chave):
         print("Arquivo incompatível.")
     Ap, chave = _InserirElementos(Ap, ordem, dataframe, chave)
     ApAlfa = _InserirElementosAlfa(ApAlfa, ordem, dataframe, chave)
-    return Ap, ApAlfa, chave
+    return Ap, ApAlfa, chave, ordem
 
 # Impressão
 

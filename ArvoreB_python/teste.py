@@ -8,14 +8,14 @@ chave = 1
 print("Bem-vindo, o que deseja realizar?")
 menu = True
 while menu:
-    cmd = int(input("\nMenu de opções\n\n0 - Sair, 1 - Inserir, 2 - Pesquisar, 3 - Imprimir em-ordem, 4 - Imprimir valores menores que uma chave, 5 - Imprimir valores maiores que uma chave.\n\nEscolher:"))
+    cmd = int(input("\nMenu de opções\n\n0 - Sair, 1 - Inserir, 2 - Pesquisar, 3 - Imprimir em-ordem, 4 - Imprimir valores menores que uma chave, 5 - Imprimir valores maiores que uma chave, 6 - Deletar um valor da chave.\n\nEscolher:"))
     print("\n")
 
     if cmd == 0:
         print("Programa finalizado. ")
         menu = False
     elif cmd == 1:
-        Ap, ApAlfa, chave = bt.Inserir(Ap, ApAlfa, chave)
+        Ap, ApAlfa, chave, ordem = bt.Inserir(Ap, ApAlfa, chave)
     elif cmd == 2:
         reg = bt.Registro()
         reg.Chave = input("\nDigite uma chave maior que zero: ")
@@ -50,5 +50,13 @@ while menu:
             bt.ImprimeMaior(reg, Ap)
         else:
             bt.ImprimeMaior(reg, ApAlfa)
+    elif cmd == 6:
+        reg = bt.Registro()
+        reg.Chave = input("\nDigite uma chave maior que zero: ")
+        if reg.Chave.isnumeric():
+            reg.Chave = int(reg.Chave)
+            bt.Deletar(reg, Ap, ordem)
+        else:
+            bt.Deletar(reg, ApAlfa, ordem)
     else:
         print("Comando inexistente.")
