@@ -1,0 +1,26 @@
+1,Nome,Idade,Ocupacao,Relacionamentos
+2,ana,22,estudante,"lui,pedro"
+3,julia,21,estudante,amanda
+4,pedro,33,padeiro,ana
+5,claudia,26,analista,lucas
+6,lui,20,bailarino,ana
+7,thiago,20,estudante,bianca
+8,bianca,38,padeiro,thiago
+9,daniel,25,engenheiro,felipe
+10,isabella,34,advogado,felipe
+11,felipe,25,designer,"daniel,isabella,rafael"
+12,gabriela,31,estudante,
+13,carolina,34,analista,
+14,guilherme,27,padeiro,
+15,natalia,28,professor,
+16,vinicius,34,analista,
+17,camila,28,padeiro,maria
+18,amanda,34,engenheiro,julia
+19,ana clara,18,designer,
+20,rafael,23,engenheiro,felipe
+21,maria,25,bailarino,camila
+22,fernanda,36,advogado,
+23,joao,36,bailarino,
+24,leonardo,30,bailarino,eduardo
+25,eduardo,39,engenheiro,leonardo
+26,lucas,23,professor,claudia
